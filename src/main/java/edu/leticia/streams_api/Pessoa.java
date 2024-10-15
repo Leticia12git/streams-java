@@ -1,5 +1,7 @@
 package edu.leticia.streams_api;
 
+import java.util.Objects;
+
 public class Pessoa {
 
     private Integer id;
@@ -46,6 +48,32 @@ public class Pessoa {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+
+    public Pessoa() {
+    }
+
+    public Pessoa(Integer id, Integer idade, String cpf, String email, String nome) {
+        this.id = id;
+        this.idade = idade;
+        this.cpf = cpf;
+        this.email = email;
+        this.nome = nome;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Pessoa pessoa = (Pessoa) o;
+        return Objects.equals(id, pessoa.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
     }
 
     @Override
