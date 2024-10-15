@@ -46,7 +46,7 @@ mvn clean install
 You can run the project to see different examples of how Java Streams can be used. Here are some of the most common operations demonstrated:
 
 Filtering
-java
+
 
 ```bash 
 List<String> names = Arrays.asList("John", "Jane", "Jack");
@@ -56,7 +56,7 @@ List<String> filteredNames = names.stream()
 
 ```
 Mapping
-java
+
 ```bash 
 List<Integer> numbers = Arrays.asList(1, 2, 3);
 List<Integer> squares = numbers.stream()
@@ -65,7 +65,7 @@ List<Integer> squares = numbers.stream()
 
 ```
 Reducing
-java
+
 ```bash 
 List<Integer> numbers = Arrays.asList(1, 2, 3);
 int sum = numbers.stream()
@@ -94,4 +94,5 @@ Feel free to contribute to this project by submitting issues or pull requests. Y
 
 ### 📧 Contact
 GitHub: https://github.com/Leticia12git
+
 Email: leticia.l.silva@outlook.com
