@@ -21,64 +21,70 @@ Built-in Operations: Perform common tasks like filtering, mapping, and reducing 
 Parallel Streams: Process large collections more efficiently with parallel processing.
 
 ### 🛠️ Technologies
-Java 8+ - Streams API requires Java 8 or higher.
-Maven - For dependency management.
+- Java 8+ - Streams API requires Java 8 or higher.
+
+- Maven - For dependency management.
 
 
 ### 📥 Installation
-Clone the repository:
-
-### bash
-Copy code
+1. Clone the repository:
+```bash
 git clone https://github.com/Leticia12git/streams-java.git
-Navigate into the project directory:
+```
 
-### bash
-Copy code
+
+2. Navigate into the project directory:
+
+```bash
 cd java-streams-project
-Build the project using Maven:
-
-bash
-Copy code
+```
+3. Build the project using Maven:
+```bash
 mvn clean install
-
+```
 ### ▶️ Usage
 You can run the project to see different examples of how Java Streams can be used. Here are some of the most common operations demonstrated:
 
 Filtering
 java
-Copy code
+
+```bash 
 List<String> names = Arrays.asList("John", "Jane", "Jack");
 List<String> filteredNames = names.stream()
 .filter(name -> name.startsWith("J"))
 .collect(Collectors.toList());
+
+```
 Mapping
 java
-Copy code
+```bash 
 List<Integer> numbers = Arrays.asList(1, 2, 3);
 List<Integer> squares = numbers.stream()
 .map(number -> number * number)
 .collect(Collectors.toList());
+
+```
 Reducing
 java
-Copy code
+```bash 
 List<Integer> numbers = Arrays.asList(1, 2, 3);
 int sum = numbers.stream()
 .reduce(0, Integer::sum);
+```
 
-💡 Examples
+### 💡 Examples
 Here are some more examples of operations you can perform with Java Streams:
 
-Filtering a list of integers to keep only even numbers.
-Finding the maximum value in a collection.
-Counting elements that match a specific condition.
-java
-Copy code
-List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+- Filtering a list of integers to keep only even numbers.
+- Finding the maximum value in a collection.
+- Counting elements that match a specific condition.
+
+```bash 
+List<nteger> numbers = Arrays.asList(1, 2, 3, 4, 5);
 long count = numbers.stream()
 .filter(n -> n % 2 == 0)
 .count();
-
+```
 
 ### 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
